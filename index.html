@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodata Diri Dinda Ramadani</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .marquee {
+      background-color: #222;
+      color: #fff;
+      padding: 10px;
+      border: 1px solid red;
+      font-weight: bold;
+      border-radius: 6px;
+      width: 90%;
+      max-width: 600px;
+      margin-top: 20px;
+      font-size: 14px;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .container {
+      background-color: #1e1e1e;
+      width: 90%;
+      max-width: 600px;
+      margin-top: 10px;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+      position: relative;
+      min-height: 800px; /* tingginya lebih panjang supaya terlihat lebar ke bawah */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    h1 {
+      color: #fff;
+      text-align: center;
+      margin: 10px 0;
+      font-size: 20px;
+    }
+    img.profile {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #ff4c4c;
+      margin: 10px auto;
+      display: block;
+    }
+    img.extra {
+      width: 90%;
+      max-width: 300px;
+      border-radius: 8px;
+      margin: 20px auto;
+      display: block;
+      border: 2px solid #ff4c4c;
+    }
+    h2 {
+      color: #ff4c4c;
+      border-bottom: 1px solid #444;
+      padding-bottom: 5px;
+      margin-top: 15px;
+      text-align: center;
+      font-size: 16px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+      font-size: 14px;
+    }
+    li {
+      margin-bottom: 6px;
+      color: #ddd;
+    }
+    .buttons {
+      margin-top: 15px;
+      text-align: center;
+    }
+    button {
+      background-color: #ff4c4c;
+      border: none;
+      color: white;
+      padding: 8px 16px;
+      margin: 4px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #e03e3e;
+    }
+    section {
+      display: none;
+      width: 100%;
+    }
+    section.active {
+      display: block;
+    }
+    .footer-buttons {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .footer-buttons a {
+      display: inline-block;
+      background-color: #444;
+      color: #fff;
+      padding: 6px 12px;
+      margin: 4px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 13px;
+    }
+    .footer-buttons a:hover {
+      background-color: #555;
+    }
+    .bottom-info {
+      text-align: center;
+      margin-top: 30px;
+      padding: 10px;
+      font-size: 13px;
+      color: #bbb;
+      border-top: 1px solid #333;
+    }
+    .bottom-info blockquote {
+      margin: 10px auto;
+      font-style: italic;
+      color: #888;
+    }
+    @media (max-width: 600px) {
+      .marquee {
+        width: 95%;
+        font-size: 12px;
+        padding: 6px;
+      }
+      .container {
+        width: 95%;
+        padding: 10px;
+        min-height: 800px;
+      }
+      img.profile {
+        width: 80px;
+        height: 80px;
+      }
+      button {
+        padding: 6px 12px;
+        margin: 3px;
+        font-size: 12px;
+      }
+      h1 {
+        font-size: 18px;
+      }
+      h2 {
+        font-size: 14px;
+      }
+      ul {
+        font-size: 12px;
+      }
+      .footer-buttons a {
+        padding: 5px 10px;
+        margin: 3px;
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <marquee class="marquee">
+    Saya adalah mahasiswi, saya suka membaca buku, saya suka menulis, saya suka bermain game
+  </marquee>
+
+  <div class="container">
+    <img src="https://via.placeholder.com/100" alt="Foto Profil" class="profile">
+    <h1>Dinda Ramadani</h1>
+    
+    <div class="buttons">
+      <button onclick="showSection('pribadi')">Pribadi</button>
+      <button onclick="showSection('pendidikan')">Pendidikan</button>
+      <button onclick="showSection('hobi')">Hobi</button>
+      <button onclick="showSection('kontak')">Kontak</button>
+    </div>
+    
+    <section id="pribadi" class="active">
+      <h2>Informasi Pribadi</h2>
+      <ul>
+        <li><strong>Nama:</strong> Dinda Ramadani</li>
+        <li><strong>Lahir:</strong> Bandung, 5 Mei 2000</li>
+        <li><strong>Jenis Kelamin:</strong> Perempuan</li>
+        <li><strong>Alamat:</strong> Bandung</li>
+      </ul>
+    </section>
+    
+    <section id="pendidikan">
+      <h2>Pendidikan</h2>
+      <ul>
+        <li>SD Negeri 1 Bandung (2006 - 2012)</li>
+        <li>SMP Negeri 3 Bandung (2012 - 2015)</li>
+        <li>SMA Negeri 5 Bandung (2015 - 2018)</li>
+        <li>Universitas Pendidikan Indonesia, S1 Pendidikan (2018 - 2022)</li>
+      </ul>
+    </section>
+    
+    <section id="hobi">
+      <h2>Hobi</h2>
+      <ul>
+        <li>Menulis</li>
+        <li>Travelling</li>
+      </ul>
+    </section>
+    
+    <section id="kontak">
+      <h2>Kontak</h2>
+      <ul>
+        <li><strong>Email:</strong> dinda@example.com</li>
+        <li><strong>Instagram:</strong> @dinda.ramadani</li>
+        <li><strong>LinkedIn:</strong> linkedin.com/in/dindaramadani</li>
+      </ul>
+    </section>
+
+    <div class="footer-buttons">
+      <a href="https://instagram.com/dinda.ramadani" target="_blank">Instagram</a>
+      <a href="https://facebook.com/" target="_blank">Facebook</a>
+      <a href="https://linkedin.com/" target="_blank">Linkedin</a>
+      <a href="mailto:dinda@example.com">Email</a>
+    </div>
+
+    <img src="https://via.placeholder.com/300x200" alt="Foto Tambahan" class="extra"> <!-- foto tambahan di bawah -->
+
+    <div class="bottom-info">
+      <blockquote>"Tetaplah bermimpi, karena mimpi membuat kita terus melangkah."</blockquote>
+      <p>&copy; 2025 Dinda Ramadani. All rights reserved.</p>
+    </div>
+  </div>
+  
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
